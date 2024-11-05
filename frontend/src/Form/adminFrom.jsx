@@ -20,7 +20,7 @@ const Form = () => {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const response = await axios.get('http://localhost:5001/api/students/form');
+        const response = await axios.get('https://weboin-task-dyrr.onrender.com/api/students/form');
         setUsers(response.data);
       } catch (error) {
         setApiError('Error fetching users. Please try again later.');
@@ -59,7 +59,7 @@ const Form = () => {
     setApiError('');
 
     try {
-      const response = await axios.post('http://localhost:5001/api/students/form', formData);
+      const response = await axios.post('https://weboin-task-dyrr.onrender.com/api/students/form', formData);
       setUsers([...users, response.data]);
       setFormData({ name: '', role: '', email: '', phone: '', course: '', status: 'Unplaced' });
     } catch (error) {
@@ -71,7 +71,7 @@ const Form = () => {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:5001/api/students/form/${id}`);
+      await axios.delete(`https://weboin-task-dyrr.onrender.com/api/students/form/${id}`);
       setUsers(users.filter((user) => user._id !== id));
     } catch (error) {
       setApiError('Error deleting user. Please try again later.');

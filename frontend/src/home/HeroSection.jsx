@@ -9,7 +9,7 @@ const HeroSection = () => {
   useEffect(() => {
     const fetchCounts = async () => {
       try {
-        const response = await axios.get('http://localhost:5001/api/students/counts'); 
+        const response = await axios.get('https://weboin-task-dyrr.onrender.com/api/students/counts'); 
         setCounts(response.data);
       } catch (error) {
         console.error('Error fetching counts:', error);
@@ -50,13 +50,7 @@ const HeroSection = () => {
             <span className="text-4xl font-bold mt-2">{counts.unplaced}</span>
           </div>
         </div> 
-        <footer className="flex justify-between items-center mt-16 text-gray-500 text-sm">
-          <div className="font-bold text-lime-500 text-2xl">LearnHub</div>
-          <p>© 2022 Tailwind Labs Inc. All rights reserved.</p>
-          <div className="flex space-x-4">
-
-          </div>
-        </footer>
+       
       </div>
     </div>
   );

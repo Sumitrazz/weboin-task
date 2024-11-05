@@ -33,7 +33,7 @@ const Home = () => {
         </button>
       </main>
 
-      <div className="mt-10 text-center">
+      <div className="mt-10 text-center mt-28">
         <h1 className="text-2xl font-bold mb-6">Our Placement Partners</h1>
         <div className="grid grid-cols-4 gap-6">
           <img src="https://res.cloudinary.com/dwux5pdmm/image/upload/v1730647008/weboins/a4wahvpkymlakhzbrykm.png" alt="Airbnb" className="max-w-[100px] mx-auto" />
@@ -49,9 +49,9 @@ const Home = () => {
           and, more companies
         </button>
 
-        <h1 className=" text-blue-400 font-bold ">OPEN SOURCE THEWE AND UI COMPONENT</h1>
+        <h1 className=" text-blue-400 font-bold mt-32 ">OPEN SOURCE THEWE AND UI COMPONENT</h1>
 
-        <h2 className=" text-3xl font-extrabold ">Geaux Astro helps you <br />craft beautiful websites <br /> efficiently</h2>
+        <h2 className=" text-3xl font-extrabold mt-7 ">Geaux Astro helps you <br />craft beautiful websites <br /> efficiently</h2>
       
 
         <div className="min-h-screen flex bg-black text-white">
@@ -101,7 +101,17 @@ const Home = () => {
     </div>
 
 <HeroSection/>
+<footer className="flex flex-col items-center mt-16 text-gray-500 text-sm">
+  <div className="font-bold text-lime-500 text-2xl mb-2">LearnHub</div>
+  <p className="text-center">© 2022 Tailwind Labs Inc. All rights reserved.</p>
+  <div className="flex space-x-4 mt-2">
+    {/* You can add social media icons or links here */}
+  </div>
+</footer>
+
+
       </div>
+      
       
       </div>
 
