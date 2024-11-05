@@ -7,6 +7,7 @@ This project was developed as part of the Weboin task submission process. It is 
 
 ## Features
 
+- Built using Vite for faster development and optimized build process
 - Responsive design with Tailwind CSS
 - MERN stack (MongoDB, Express, React, Node.js)
 - REST API for backend functionality
@@ -60,7 +61,7 @@ Ensure you have the following installed on your local machine:
    npm start
    ```
 
-   The application will be running at `http://localhost:3000`.
+   The application will be running at `http://localhost:5173`.
 
 ## Technologies Used
 
@@ -83,4 +84,4 @@ For any inquiries or issues, please feel free to reach out:
 
 ---
 
-Thank you for reviewing this project!
+
