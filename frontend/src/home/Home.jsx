@@ -1,24 +1,16 @@
 import HeroSection from "./HeroSection";
 
-import { useNavigate } from "react-router-dom";
+
+import Navbar from "./Navbar";
 
 
 const Home = () => {
-  const navigate = useNavigate();
 
-  const handleAdminClick = () => {
-    navigate("/form");
-  };
 
   return (
     <div className="min-h-screen bg-[#111] text-white flex flex-col items-center">
-      <header className="w-full flex justify-between items-center px-8 py-4">
-        <h1 className="text-xl font-bold text-lime-400">LearnHub</h1>
-        <button className="text-white border border-white rounded-md px-4 py-2 hover:bg-white hover:text-black"           onClick={handleAdminClick}
-        >
-            Admin
-        </button>
-      </header>
+
+
 
       <main className="flex flex-col items-center text-center mt-20">
         <h2 className="text-5xl font-bold mb-4">
@@ -33,7 +25,7 @@ const Home = () => {
         </button>
       </main>
 
-      <div className="mt-10 text-center mt-28">
+      <div className=" text-center mt-28">
         <h1 className="text-2xl font-bold mb-6">Our Placement Partners</h1>
         <div className="grid grid-cols-4 gap-6">
           <img src="https://res.cloudinary.com/dwux5pdmm/image/upload/v1730647008/weboins/a4wahvpkymlakhzbrykm.png" alt="Airbnb" className="max-w-[100px] mx-auto" />
@@ -54,10 +46,10 @@ const Home = () => {
         <h2 className=" text-3xl font-extrabold mt-7 ">Geaux Astro helps you <br />craft beautiful websites <br /> efficiently</h2>
       
 
-        <div className="min-h-screen flex bg-black text-white">
+        <div className=" relative min-h-screen flex bg-black text-white">
 
 
-      <div className="flex flex-col space-y-10 p-8 w-1/2">
+      <div className="flex flex-col space-y-10 p-8 w-1/2 z-10">
 
         <div className="flex items-start space-x-4">
           <img src="https://res.cloudinary.com/dwux5pdmm/image/upload/v1730646777/weboins/dhktdjva0jw03vfnoe8c.png" alt="Certificate Icon" className="h-10 w-10" />
@@ -101,13 +93,7 @@ const Home = () => {
     </div>
 
 <HeroSection/>
-<footer className="flex flex-col items-center mt-16 text-gray-500 text-sm">
-  <div className="font-bold text-lime-500 text-2xl mb-2">LearnHub</div>
-  <p className="text-center">© 2022 Tailwind Labs Inc. All rights reserved.</p>
-  <div className="flex space-x-4 mt-2">
-    {/* You can add social media icons or links here */}
-  </div>
-</footer>
+
 
 
       </div>

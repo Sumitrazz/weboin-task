@@ -79,7 +79,7 @@ const Form = () => {
   };
 
   return (
-    <div className="flex flex-col items-center min-h-screen bg-black">
+    <div className="flex mt-20  flex-col items-center min-h-screen bg-black">
       <form onSubmit={handleSubmit} className="bg-gray-800 p-8 rounded-lg shadow-lg w-full max-w-3xl text-white mb-10">
         <h2 className="text-2xl font-bold text-center text-lime-400 mb-6">Fill This Form</h2>
         {apiError && <p className="text-red-500 mb-4">{apiError}</p>}
@@ -139,7 +139,7 @@ const Form = () => {
         </button>
       </form>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid mb-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {isLoading ? (
           <p className="text-white">Loading users...</p>
         ) : (
@@ -162,13 +162,6 @@ const Form = () => {
         )}
       </div>
 
-      <footer className=" justify-center items-center mt-16 text-gray-500 text-sm">
-          <div className="font-bold text-lime-500 text-2xl">LearnHub</div>
-          <p>© 2022 Tailwind Labs Inc. All rights reserved.</p>
-          <div className="flex space-x-4">
-
-          </div>
-        </footer>
 
     </div>
   );
